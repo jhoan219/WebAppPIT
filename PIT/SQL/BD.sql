@@ -203,7 +203,8 @@ begin
 select nombres ,nacionalidad,iddocumento,numdocumento,tipodocumento,iddepartamento,idprovincia,iddistrito,idestado from ciudadano
 end
 exec USP_ListarCiudadano
-
+go
+-------------------------------------
 select * from departamento
 select * from documento
 select * from estado
