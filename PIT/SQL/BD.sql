@@ -204,7 +204,7 @@ select nombres ,nacionalidad,iddocumento,numdocumento,tipodocumento,iddepartamen
 end
 exec USP_ListarCiudadano
 go
--------------------------------------
+-------------------------------
 select * from departamento
 select * from documento
 select * from estado
