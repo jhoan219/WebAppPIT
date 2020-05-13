@@ -8,6 +8,59 @@ go
 use PIT
 go
  
+
+ 
+--==========================================================
+--------------TABLA CIUDADANO------------------
+If Object_id ('ciudadano1') is not null
+begin
+drop table ciudadano1
+end   
+create  table ciudadano1
+(
+idciudadano int identity(1,1) primary key,
+nombres varchar(45) not null,
+nacionalidad varchar(45) not null,
+tipodocumento varchar(45)  not null,
+numdocumento varchar(45) not null,
+iddepartamento varchar(45)  not null,
+idprovincia varchar(45)  not null,
+iddistrito varchar(45)  not null,
+idestado varchar(45)  not null, 
+)
+go 
+insert into ciudadano1 values ('Luis Perez Guzman','Peru','Dni','89562312','Lima','Lima','Los Olivos','Enfermo')
+insert into ciudadano1 values ('Pedro Rojas Gonzales','Peru','Dni','11223568','Callao','Callao','Ventanilla','Enfermo')
+insert into ciudadano1 values ('Maria Lopez Pereida','Peru','Dni','12235678','Lima','Miraflores','Los Olivos','Recuperado')
+insert into ciudadano1 values ('Ana Mendoza Loaiza','Peru','Dni','56781223','Lima','Surco','Los Olivos','Fallecido')
+insert into ciudadano1 values ('Luisa Campos Robles','Peru','Dni','56234578','Lima','San Martin','Los Olivos','Enfermo')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--==========================================================
+
+
+
+
+
+
+
+
+
  --==========================================================
 --------------TABLA PAIS------------------
 If Object_id ('pais') is not null
@@ -168,27 +221,3 @@ insert into provincia values ('Callao')
 insert into ciudadano values ('Luis Perez Guzman','peruana',1,'1',1,1,1,1,1)
 
 
---==========================================================
---------------TABLA CIUDADANO------------------
-If Object_id ('ciudadano1') is not null
-begin
-drop table ciudadano1
-end   
-create  table ciudadano1
-(
-idciudadano int identity(1,1) primary key,
-nombres varchar(45) not null,
-nacionalidad varchar(45) not null,
-tipodocumento varchar(45)  not null,
-numdocumento varchar(45) not null,
-iddepartamento varchar(45)  not null,
-idprovincia varchar(45)  not null,
-iddistrito varchar(45)  not null,
-idestado varchar(45)  not null, 
-)
-go 
-insert into ciudadano1 values ('Luis Perez Guzman','Peru','Dni','89562312','Lima','Lima','Los Olivos','Enfermo')
-insert into ciudadano1 values ('Pedro Rojas Gonzales','Peru','Dni','11223568','Callao','Callao','Ventanilla','Enfermo')
-insert into ciudadano1 values ('Maria Lopez Pereida','Peru','Dni','12235678','Lima','Miraflores','Los Olivos','Recuperado')
-insert into ciudadano1 values ('Ana Mendoza Loaiza','Peru','Dni','56781223','Lima','Surco','Los Olivos','Fallecido')
-insert into ciudadano1 values ('Luisa Campos Robles','Peru','Dni','56234578','Lima','San Martin','Los Olivos','Enfermo')
