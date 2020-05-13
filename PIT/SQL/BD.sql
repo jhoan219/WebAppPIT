@@ -28,6 +28,10 @@ idprovincia varchar(45)  not null,
 iddistrito varchar(45)  not null,
 idestado varchar(45)  not null, 
 )
+
+
+
+
 go 
 insert into ciudadano1 values ('Luis Perez Guzman','Peru','Dni','89562312','Lima','Lima','Los Olivos','Enfermo')
 insert into ciudadano1 values ('Pedro Rojas Gonzales','Peru','Dni','11223568','Callao','Callao','Ventanilla','Enfermo')
